@@ -31,7 +31,7 @@ body {
 
 * {
   color: var(--white);
-  /* margin: 30px; */
+  margin: 30px;
 }
 
 body {
@@ -44,6 +44,11 @@ body {
 
 .navui {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 30px;
+  width: 100%;
 }
 
 .site-title {
@@ -96,13 +101,6 @@ body {
 .top, .bot {
   display: flex;
 }
-
-/* .contact {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-
-} */
 
 .contact ul {
   position: fixed;
