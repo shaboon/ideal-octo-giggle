@@ -1,3 +1,12 @@
+:root {
+  --backcolor: #333940;
+  --borcard: 8px #ffffff solid;
+  --borhead: 3px #ffffff solid;
+  --white: #fff;
+  --pcolor: #e867ed;
+  --borradius: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,22 +17,142 @@ html {
   height: 100%;
 }
 
+.paradoxback {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 body {
   min-height: 100%;
   line-height: 1;
   font-family: sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
-}
+} */
 
-input, select, option, optgroup, textarea, button,
+/* input, select, option, optgroup, textarea, button,
 pre, code {
   font-size: 100%;
   font-family: inherit;
+} */
+
+/* ol, ul {
+  list-style: none;
+} */
+
+
+
+* {
+  color: var(--white);
+  /* margin: 30px; */
 }
 
-ol, ul {
-  list-style: none;
+body {
+  background-color: var(--backcolor);
+}
+
+.header {
+  text-align: center;
+}
+
+.navui {
+  text-align: center;
+}
+
+.site-title {
+  color: var(--pcolor);
+  font-size: 32px;
+}
+
+.card {
+  justify-content: center;
+  max-width: 33.3%;
+  border: var(--borcard);
+  padding: 10px;
+  flex-basis: 30%;
+  margin: 20px;
+  color: var(--pcolor);
+}
+
+.card-header {
+  border: var(--borhead);
+  border-radius: var(--borradius);
+  background-color: var(--backcolor);
+  position: relative;
+  margin-bottom: 20px;
+  color: var(--pcolor);
+}
+
+.app01 {
+    justify-content: center;
+    height: 800px;
+    max-width: 80%;
+    border: var(--borcard);
+    padding: 10px;
+    flex-basis: 30%;
+    margin: 20px;
+    color: var(--pcolor);
+}
+
+.app01 a {
+  background-image: url(../images/horiseon.png);
+}
+
+.card pre {
+  border-radius: var(--borradius);
+  background: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+  );
+}
+
+.top, .bot {
+  display: flex;
+}
+
+/* .contact {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+} */
+
+.contact ul {
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  min-width: 150px;
+  border: var(--borcard);
+  padding: 10px;
+  flex-basis: 30%;
+}
+
+.contact button {
+  position: relative;
+  right: 0;
+  max-width: 60px;
+  max-height: 56px;
+  border-radius: 50%;
+}
+
+.contact img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333940;
+  border: #333940;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
 }
