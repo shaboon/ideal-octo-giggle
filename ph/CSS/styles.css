@@ -29,22 +29,6 @@ body {
   font-family: sans-serif;
 }
 
-/* h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-} */
-
-/* input, select, option, optgroup, textarea, button,
-pre, code {
-  font-size: 100%;
-  font-family: inherit;
-} */
-
-/* ol, ul {
-  list-style: none;
-} */
-
-
-
 * {
   color: var(--white);
   /* margin: 30px; */
@@ -147,6 +131,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 30px;
   background-color: #333940;
   border: #333940;
 }
