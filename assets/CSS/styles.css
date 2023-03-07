@@ -1,9 +1,10 @@
 :root {
-  --backcolor: #333940;
-  --borcard: 8px #ffffff solid;
+  --backcolor: #5a5a5a;
+  --borcard: 8px #ffa45b solid;
   --borhead: 3px #ffffff solid;
+  --cardback: #ffebdb;
   --white: #fff;
-  --pcolor: #e867ed;
+  --pcolor: #ffffff;
   --borradius: 5px;
 }
 
@@ -11,57 +12,99 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--white);
-  /* margin: 30px; */
-}
-
-html {
-  height: 100%;
-}
-
-.paradoxback {
-  position: fixed;
-  top: 0;
-  left: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #f09e5a;
 }
 
 body {
+  width: 100%;
+  margin-top: 100px;
   min-height: 100%;
   line-height: 1;
   font-family: sans-serif;
-  background-color: var(--backcolor);
-}
-
-body {
-  background-color: var(--backcolor);
+  font-weight: bold;
+  background-color: #25424c;
+ 
 }
 
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 35px;
+  border-radius: 0px 0px 35px 35px;
   text-align: center;
+  background-color: var(--backcolor);
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  z-index: 6;
+}
+
+.header img {
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .navui {
-  text-align: center;
   display: inline;
-  align-items: center;
-  justify-items: center;
-  margin: 30px;
+  vertical-align: middle;
+  /* margin: 30px 80px 30px 80px; */
   width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border: 5px #fff solid;
+  background-color: #313131;
+}
+
+#logonav {
+  border: 0px;
+  background-color: transparent;
+}
+
+.reserveui {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 50px;
+  background-color: #313131;
+  text-align: center;
+  color: #fff;
+  z-index: 5;
+}
+
+.header-infobox {
+  background-color: var(--backcolor);
+  padding: 25px;
+  border-radius: 0px 0px 60px;
 }
 
 .site-title {
   color: var(--pcolor);
   font-size: 32px;
+  padding: 50px;
 }
 
 .card {
-  justify-content: center;
-  max-width: 33.3%;
-  border: var(--borcard);
-  padding: 10px;
-  flex-basis: 30%;
-  margin: 20px;
+  width: fit-content;
+  height: 300px;
+  border-radius: 20px;  
+  padding: 10px;  
+  flex-basis: 50%;
+  margin: auto;
+  background-color: var(--cardback);
   color: var(--pcolor);
+  border: var(--borcard);
+}
+
+.card img, video {
+  opacity: 0.5;
+  transition: all 1s;
+}
+
+.card:hover img, video {
+  opacity: 1;
 }
 
 .card-header {
@@ -69,35 +112,43 @@ body {
   border-radius: var(--borradius);
   background-color: var(--backcolor);
   position: relative;
-  margin-bottom: 20px;
+  margin: 20px;
+  padding: 10px;
+  bottom: 50px;
+  width:fit-content;
   color: var(--pcolor);
+  font-size: 3em;
 }
 
 .app01 {
-    justify-content: center;
-    height: 800px;
+    height: auto;
     max-width: 80%;
-    border: var(--borcard);
+    justify-items: center;
     padding: 10px;
     flex-basis: 30%;
     margin: 20px;
     color: var(--pcolor);
 }
 
-.app01 a {
-  background-image: url(../images/horiseon.png);
+.app01 img {
+  width: 100%;
+  height: auto;
 }
 
-.card pre {
-  border-radius: var(--borradius);
-  background: linear-gradient(
-    rgba(232, 102, 236, 0.3) 0%,
-    rgba(232, 102, 236, 0.6) 100%
-  );
+video {
+  max-width: 200px;
+  max-height: 200px;
 }
 
-.top, .bot {
+.subcontent {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.subcontent img {
+  object-fit: contain ;
+  max-width: auto;
+  max-height: 200px;
 }
 
 .contact ul {
@@ -105,10 +156,13 @@ body {
   bottom: 30px;
   right: 0;
   max-width: 250px;
-  max-height: 650px;
+  max-height: 850px;
   border: var(--borcard);
   padding: 10px;
   flex-basis: 30%;
+  background-color: #333940;
+  border-radius: 30px 0px 0px 0px;
+  text-align: right;
 }
 
 .contact button {
@@ -116,6 +170,7 @@ body {
   max-width: 60px;
   max-height: 60px;
   border-radius: 50%;
+  /* display: none; */
 }
 
 .contact img {
@@ -123,17 +178,57 @@ body {
   max-height: 50px;
 }
 
-footer div {
+footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 30px;
-  background-color: #0077ff;
-  border: #333940;
+  padding: 10px;
+  background-color: #313131;
+  text-align: right;
 }
 
-@media screen and (max-width: 768px) {
+footer span {
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 1080px) {
+  .header {
+    opacity: 0;
+  }
+
+  .header:hover {
+    opacity: 1;
+    transition: all 1s;
+  }
+
+  .reserveui {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 50px;
+    background-color: #313131;
+    text-align: center;
+    text-decoration-line: underline;
+    }
+  
+  .navui {
+    display: list-item;
+    padding: 10px;
+  }
+
+}
+
+@media screen and (max-width: 1020px) {
   .card {
     flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+
+  .app01 {
+    width: 100%;
+    flex-basis: 100%;
   }
 }
