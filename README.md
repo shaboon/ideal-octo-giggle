@@ -4,30 +4,31 @@
 
 Welcome!/
 
-Here is My portfolio, and inside you can find a small window of my work./
-There's not a lot in there right now, but as class goes on it will fill-up.
+Here is my portfolio, and inside you can find a small window of my work./
+There's not a lot in there right now, but as class goes on it will/ fill-up.
 
 ## Installation
 
-No Installation Required!/
+No Installation Required!\
 
-Just follow this link 
+Just follow this link\
+https://shaboon.github.io/ideal-octo-giggle/
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+This site is used to view and judge my (Sean Haboon's) current full-stack skills.\
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+This site was last edited on March 7th, 2023\
 
-![alt text](assets/images/screenshot.png)
+![screenshot of](assets/images/sitescreenshot.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Sample Code provided by UNCC-VIRT-FSF-FT-02-2023-U-LOLC-M-F
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+Collaborators:
+Joanna Haboon
+Austin Meadows
 
 Background Image From:
 https://www.pexels.com/search/space/
@@ -35,8 +36,8 @@ Hristo Fidanov
 
 ## License
 
-This application holds all standard rights and does not exceed that standard.
+This application holds all standard rights.
 
 ## Features
 
-You will be able to find a nav-bar along the top of the page. Furthermore, whereever applicable, there are links that will lead you to the desired/relevant resource
+You will be able to find a nav-bar along the top of the page. Furthermore, whereever applicable, there are links that will lead you to the desired/relevant resource.
