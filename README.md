@@ -2,23 +2,23 @@
 
 ## Description
 
-Welcome!/
+Welcome!
 
 Here is my portfolio, and inside you can find a small window of my work./
 There's not a lot in there right now, but as class goes on it will/ fill-up.
 
 ## Installation
 
-No Installation Required!\
+No Installation Required!
 
 Just follow this link\
 https://shaboon.github.io/ideal-octo-giggle/
 
 ## Usage
 
-This site is used to view and judge my (Sean Haboon's) current full-stack skills.\
+This site is used to view and judge my (Sean Haboon's) current full-stack skills.
 
-This site was last edited on March 7th, 2023\
+This site was last edited on March 7th, 2023
 
 ![screenshot of](assets/images/sitescreenshot.png)
 
